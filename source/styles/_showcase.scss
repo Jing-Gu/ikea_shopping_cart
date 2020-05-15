@@ -1,0 +1,27 @@
+.showcase {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-bottom: 100px;
+    .shop-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        text-align: center;
+        font-size: 1.5em;
+      }
+      .bottom-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 100px;
+        //border: 1px solid red;
+        .shop-item-price {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

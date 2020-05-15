@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/landing-page/logo.jpg" alt=""
+        /></a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="hero">
+        <a href="#showcase" class="cta-btn">Rent Furniture</a>
+      </div>
+
+      <div class="sidebar">
+        <div class="content">
+          <p>Can’t commit to a kitchen?</p>
+          <p>Concerned about your environmental footprint?</p>
+          <p>Ikea is here to help.</p>
+        </div>
+        <a class="read-btn" href="#">Read More</a>
+      </div>
+      <div class="inspiration">
+        <h3>Inspiration</h3>
+        <img src="images/landing-page/armchair.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- showcase section -->
+    <section class="showcase" id="showcase">
+      <h2>Our Selection</h2>
+      <div class="row">
+        <div class="shop-item">
+          <h3 class="shop-item-title">Bed</h3>
+          <img src="images/bed.svg" alt="" />
+          <div class="bottom-info">
+            <p class="shop-item-price">$560</p>
+            <button class="btn-shop">Add To Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <h3 class="shop-item-title">Lounge sofa</h3>
+          <img src="images/sofa.svg" alt="" />
+          <div class="bottom-info">
+            <p class="shop-item-price">$380</p>
+            <button class="btn-shop">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="shop-item">
+          <h3 class="shop-item-title">Dinning chair</h3>
+          <img src="images/wooden-chair.svg" alt="" />
+          <div class="bottom-info">
+            <p class="shop-item-price">$120</p>
+            <button class="btn-shop">Add To Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <h3 class="shop-item-title">Armchair</h3>
+          <img src="images/armchair.svg" alt="" />
+          <div class="bottom-info">
+            <p class="shop-item-price">$190</p>
+            <button class="btn-shop">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="shop-item">
+          <h3 class="shop-item-title">Dinning table</h3>
+          <img src="images/dining-table.svg" alt="" />
+          <div class="bottom-info">
+            <p class="shop-item-price">$260</p>
+            <button class="btn-shop">Add To Cart</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <h3 class="shop-item-title">Patio table</h3>
+          <img src="images/patio-table.svg" alt="" />
+          <div class="bottom-info">
+            <p class="shop-item-price">$230</p>
+            <button class="btn-shop">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of showcase -->
+
+    <!-- cart section -->
+    <section class="cart">
+      <h2>CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-column cart-header">ITEM</span>
+        <span class="cart-price cart-column cart-header">PRICE</span>
+        <span class="cart-quantity cart-column cart-header">QUANTITY</span>
+      </div>
+
+      <div class="cart-container cart-items"></div>
+
+      <div class="cart-total">
+        <p class="cart-total-title">Total</p>
+        <p class="cart-total-price">$0</p>
+      </div>
+
+      <button class="btn btn-purchase">PURCHASE</button>
+    </section>
+
+    <!-- popup modal area -->
+    <div class="modal" id="modal-purchase">
+      <div class="modal-header">
+        <div class="btn-close">&times;</div>
+      </div>
+      <div class="modal-body">
+        <img class="modal-svg" src="images/congrats.svg" alt="" />
+        Thank you very much for your purchase.
+      </div>
+    </div>
+
+    <div class="modal" id="modal-cart">
+      <div class="modal-header">
+        <div class="btn-close">&times;</div>
+      </div>
+      <div class="modal-body">
+        <img class="modal-svg" src="images/cart.svg" alt="" />
+        This item is already in your cart.
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer>
+      <p>&copy; 2020</p>
+      <p>Jing Gu</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

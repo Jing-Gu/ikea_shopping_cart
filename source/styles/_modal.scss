@@ -1,0 +1,51 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid $clr-blue;
+  border-radius: 5px;
+  width: 400px;
+  padding: 1.5em;
+  font-size: 1.2em;
+  z-index: 10;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  @include transition-ease;
+  .modal-header {
+    margin-bottom: 1em;
+    .btn-close {
+      cursor: pointer;
+      font-size: 2em;
+      text-align: right;
+      color: $clr-blue;
+    }
+  }
+  .modal-svg {
+    width: 80px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  @include transition-ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
